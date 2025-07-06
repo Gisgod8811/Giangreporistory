@@ -1,0 +1,10 @@
+/* src/styles/App.css */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #282c34; /* Nền tối */
+  padding: 40px;
+  box-sizing: border-box;
+}

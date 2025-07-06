@@ -1,0 +1,132 @@
+{
+  "thong_tin_duong_so": {
+    "ho_ten": "Nguyen Van A",
+    "duong_lich": "01/01/1990",
+    "am_lich": "05/12/Canh Ngo",
+    "menh_cuc": "Kim - Cục Thủy",
+    "chu_menh": "Cự Môn"
+  },
+  "dia_ban": [
+    {
+      "ten_cung": "Tý",
+      "can_chi": "Giáp Tý",
+      "dai_han": 10,
+      "vong_trang_sinh": "Trường Sinh",
+      "chinh_tinh": ["Tử Vi"],
+      "cat_tinh": ["Thiên Khôi", "Thiên Việt"],
+      "sat_tinh": ["Địa Không"],
+      "phu_tinh_khac": ["Hóa Khoa", "Hóa Lộc"]
+    },
+    {
+      "ten_cung": "Sửu",
+      "can_chi": "Ất Sửu",
+      "dai_han": 20,
+      "vong_trang_sinh": "Mộc Dục",
+      "chinh_tinh": ["Liêm Trinh"],
+      "cat_tinh": ["Văn Xương"],
+      "sat_tinh": ["Địa Kiếp"],
+      "phu_tinh_khac": ["Hóa Quyền"]
+    },
+    {
+      "ten_cung": "Dần",
+      "can_chi": "Bính Dần",
+      "dai_han": 30,
+      "vong_trang_sinh": "Quan Đới",
+      "chinh_tinh": ["Thiên Đồng"],
+      "cat_tinh": ["Văn Khúc"],
+      "sat_tinh": ["Kình Dương"],
+      "phu_tinh_khac": ["Thiên Mã"]
+    },
+    {
+      "ten_cung": "Mão",
+      "can_chi": "Đinh Mão",
+      "dai_han": 40,
+      "vong_trang_sinh": "Lâm Quan",
+      "chinh_tinh": ["Vũ Khúc"],
+      "cat_tinh": ["Thiên Tướng"],
+      "sat_tinh": ["Đà La"],
+      "phu_tinh_khac": ["Thiên Hỷ"]
+    },
+    {
+      "ten_cung": "Thìn",
+      "can_chi": "Mậu Thìn",
+      "dai_han": 50,
+      "vong_trang_sinh": "Đế Vượng",
+      "chinh_tinh": ["Thái Dương"],
+      "cat_tinh": ["Thiên Phúc"],
+      "sat_tinh": ["Thiên Hình"],
+      "phu_tinh_khac": ["Thiên Đức"]
+    },
+    {
+      "ten_cung": "Tỵ",
+      "can_chi": "Kỷ Tỵ",
+      "dai_han": 60,
+      "vong_trang_sinh": "Suy",
+      "chinh_tinh": ["Thiên Cơ"],
+      "cat_tinh": ["Thiên Quý"],
+      "sat_tinh": ["Hóa Kỵ"],
+      "phu_tinh_khac": ["Thiên Khốc"]
+    },
+    {
+      "ten_cung": "Ngọ",
+      "can_chi": "Canh Ngọ",
+      "dai_han": 70,
+      "vong_trang_sinh": "Bệnh",
+      "chinh_tinh": ["Thái Âm"],
+      "cat_tinh": ["Thiên Giải"],
+      "sat_tinh": ["Bạch Hổ"],
+      "phu_tinh_khac": ["Thiên Hư"]
+    },
+    {
+      "ten_cung": "Mùi",
+      "can_chi": "Tân Mùi",
+      "dai_han": 80,
+      "vong_trang_sinh": "Tử",
+      "chinh_tinh": ["Tham Lang"],
+      "cat_tinh": ["Thiên Trù"],
+      "sat_tinh": ["Thiên Riêu"],
+      "phu_tinh_khac": ["Thiên Y"]
+    },
+    {
+      "ten_cung": "Thân",
+      "can_chi": "Nhâm Thân",
+      "dai_han": 90,
+      "vong_trang_sinh": "Mộ",
+      "chinh_tinh": ["Cự Môn"],
+      "cat_tinh": ["Thiên Đức"],
+      "sat_tinh": ["Linh Tinh"],
+      "phu_tinh_khac": ["Thiên Tài"]
+    },
+    {
+      "ten_cung": "Dậu",
+      "can_chi": "Quý Dậu",
+      "dai_han": 100,
+      "vong_trang_sinh": "Tuyệt",
+      "chinh_tinh": ["Phá Quân"],
+      "cat_tinh": ["Thiên Hỷ"],
+      "sat_tinh": ["Hỏa Tinh"],
+      "phu_tinh_khac": ["Thiên Thọ"]
+    },
+    {
+      "ten_cung": "Tuất",
+      "can_chi": "Giáp Tuất",
+      "dai_han": 110,
+      "vong_trang_sinh": "Thai",
+      "chinh_tinh": ["Thiên Phủ"],
+      "cat_tinh": ["Thiên Quan"],
+      "sat_tinh": ["Thiên Sát"],
+      "phu_tinh_khac": ["Thiên Tướng"]
+    },
+    {
+      "ten_cung": "Hợi",
+      "can_chi": "Ất Hợi",
+      "dai_han": 120,
+      "vong_trang_sinh": "Dưỡng",
+      "chinh_tinh": ["Thiên Tướng"],
+      "cat_tinh": ["Thiên Mã"],
+      "sat_tinh": ["Thiên La"],
+      "phu_tinh_khac": ["Thiên Khôi"]
+    }
+  ]
+}
+

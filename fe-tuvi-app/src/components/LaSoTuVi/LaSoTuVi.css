@@ -1,0 +1,17 @@
+/* src/components/LaSoTuVi/LaSoTuVi.css */
+
+.la-so-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 12px;
+  width: 900px;
+  height: 900px;
+  margin: 0 auto;
+  position: relative;
+
+  /* HÃY CHẮC CHẮN CÁC DÒNG NÀY ĐÃ BỊ XÓA HOẶC COMMENT LẠI */
+  /* background: #fafafa; */
+  /* padding: 32px; */
+  /* border-radius: 16px; */
+}
