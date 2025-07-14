@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lá Số Tử Vi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fefefe;
+      margin: 0;
+      padding: 20px;
+    }
+    .tuvi-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 5px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .cung {
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-size: 13px;
+      background: #f9f9f9;
+    }
+    .center {
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 2;
+      text-align: center;
+      border: 2px solid #000;
+      background-color: #fff8e1;
+    }
+    .title {
+      font-weight: bold;
+      margin-bottom: 5px;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">Lá Số Tử Vi</h1>
+
+  <div class="tuvi-container">
+
+    <% const positions = [
+      0, 1, 2, 3,
+      11, 'center', 'center', 4,
+      10, 'center', 'center', 5,
+      9, 8, 7, 6
+    ]; %>
+
+    <% positions.forEach(pos => { %>
+      <% if (pos === 'center') { %>
+        <% if (!positions.includes('rendered_center')) { positions[positions.indexOf('center')] = 'rendered_center'; %>
+          <div class="cung center">
+            <h2>Lá Số Tử Vi</h2>
+            <p><strong>Họ tên:</strong> <%= result.birth_info.user_id %></p>
+            <p><strong>Năm:</strong> <%= result.birth_info.nam_dl %> (<%= result.chart.thong_tin_duong_so.can_chi_nam %>)</p>
+            <p><strong>Tháng:</strong> <%= result.birth_info.thang_dl %> (<%= result.birth_info.thang_al %>)</p>
+            <p><strong>Ngày:</strong> <%= result.birth_info.ngay_dl %> (<%= result.birth_info.ngay_al %>)</p>
+            <p><strong>Giờ:</strong> <%= result.birth_info.gio_sinh %> giờ (<%= result.chart.thong_tin_duong_so.gio_sinh_chi %>)</p>
+            <p><strong>Năm xem:</strong> <%= result.birth_info.nam_xem %></p>
+            <p><strong>Âm dương:</strong> <%= result.chart.thong_tin_duong_so.am_duong_nam_nu %></p>
+            <p><strong>Bản mệnh:</strong> <%= result.chart.thong_tin_duong_so.menh_cuc %></p>
+            <p><strong>Cân lượng:</strong> <%= result.chart.thong_tin_duong_so.can_luong %></p>
+            <p><strong>Chủ mệnh:</strong> <%= result.chart.thong_tin_duong_so.chu_menh %></p>
+            <p><strong>Chủ thân:</strong> <%= result.chart.thong_tin_duong_so.chu_than %></p>
+            <p><strong>Lai nhân cung:</strong> <%= result.chart.thong_tin_duong_so.cung_menh_tai %></p>
+          </div>
+        <% } %>
+      <% } else { %>
+        <% const cung = result.chart.dia_ban[pos]; %>
+        <div class="cung">
+          <div class="title"><%= cung.ten_cung %> - <%= cung.cung_chuc_nang %></div>
+          <% if (cung.chinh_tinh.length) { %>
+            <p><strong>Chính tinh:</strong><br>
+              <%= cung.chinh_tinh.map(t => t.ten + ' (' + t.trang_thai + ')').join(', ') %>
+            </p>
+          <% } %>
+          <% if (cung.luu_tinh.length) { %>
+            <p><strong>Lưu tinh:</strong><br>
+              <%= cung.luu_tinh.map(t => t.ten).join(', ') %>
+            </p>
+          <% } %>
+          <p><strong>Đại hạn:</strong> <%= cung.dai_han %></p>
+        </div>
+      <% } %>
+    <% }) %>
+
+  </div>
+</body>
+</html>
