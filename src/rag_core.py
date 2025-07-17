@@ -84,3 +84,33 @@ class RAGCore:
         response = self.llm.generate_content(prompt_template)
         print("Đã nhận được câu trả lời từ Gemini.")
         return response.text
+
+    def analyze_chart_parts(self, user_data):
+        """
+        Phân tích các phần của lá số dựa trên dữ liệu đầu vào.
+        """
+        try:
+            # Ví dụ logic phân tích
+            result = {
+                "user_id": user_data.get("user_id"),
+                "gioi_tinh": user_data.get("gioi_tinh"),
+                "phân_tích": "Phân tích các phần của lá số thành công."
+            }
+            return result
+        except Exception as e:
+            return {"error": str(e)}
+
+    def analyze_chart_summary(self, user_data, *args):
+        """
+        Tóm tắt lá số dựa trên dữ liệu đầu vào.
+        """
+        try:
+            # Ví dụ logic tóm tắt
+            summary = {
+                "user_id": user_data.get("user_id"),
+                "gioi_tinh": user_data.get("gioi_tinh"),
+                "tóm_tắt": "Tóm tắt lá số thành công."
+            }
+            return summary
+        except Exception as e:
+            return {"error": str(e)}
